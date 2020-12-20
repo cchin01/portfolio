@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=icon href=assets/img/favicon.png sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="/vendor/css/bootstrap.css" />
+    <link rel="stylesheet" href="/resources/css/normalize.css" />
+    <link rel="stylesheet" href="/resources/css/main.css" />
+    <link rel="stylesheet" href="/resources/css/mediaQuery.css" />
+    <link rel="stylesheet" href="/resources/css/post.css" />
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <header class="main-header">
+        <div class="wrapper">
+          <div class="header-flex">
+            <div class="left-header-container">
+              <a href="/"> Home </a>
+            </div>
+            <div class="center-header-container">
+              <div class="logo">
+                <div class="author-name">Sameul Chin</div>
+                <div class="author-title">Marketing x Product</div>
+              </div>
+              <ul class="contact-links">
+                <li class="email" data-balloon="Email" data-balloon-pos="left">
+                  <a href="mailto:louis@rassaby.com"><i class="far fa-envelope"></i></a>
+                </li>
+
+                <li class="linkedin" data-balloon="LinkedIn" data-balloon-pos="left">
+                  <a href="https://in.linkedin.com/in/lrassaby" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+
+                <li class="github" data-balloon="GitHub" data-balloon-pos="right">
+                  <a href="https://github.com/lrassaby" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+
+                <li class="resume" data-balloon="Resume" data-balloon-pos="right">
+                  <a
+                    href="https://docs.google.com/document/d/1dJIboSF-ktdaP28DDu-gcuOW1SCCnkSdqtodJGwYkaA/export?format=pdf"
+                    ><i class="far fa-file-alt"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="right-header-container">
+              <a href="/about"> About </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <section id="post">
+        <div class="post-container post-card-box">
+          <div class="post-title">
+            <h1>Yahoo Menu</h1>
+            <h2>從0到1建立網站</h2>
+          </div>
+          <h3>DEMO：</h3>
+          <a href="https://cchin01.github.io/Yahoo-Menu/" target="_blank"
+            ><p>https://cchin01.github.io/Yahoo-Menu/</p></a
+          >
+          <h3>受眾是誰：</h3>
+          <p>習慣每天吃員工餐的公司員工</p>
+          <h3>他們遇到了什麼問題：</h3>
+          <p>
+            合作廠商提供的菜單，習慣將同一個供餐商每天提供的餐點擺在同一頁，讓使用者需要查看多頁來確定今日的菜單。
+            但對使用者而言，每個供餐商在同一天分別提供什麼餐點更為重要。
+          </p>
+          <div class="blank-line"></div>
+          <img class="post-img" src="/resources/img/post/yahoo menu/bad example.jpg" alt="yahoo menu original" />
+          <div class="img-description">原本的菜單樣式</div>
+          <h3>如何解決問題：</h3>
+          <p>讓使用者能夠以"禮拜幾"作為維度的篩選，方便比較在同一天的不同便當。</p>
+
+          <div class="blank-line"></div>
+
+          <h3>整理需求：</h3>
+          <img class="post-img" src="/resources/img/post/yahoo menu/feature.jpg" alt="" />
+          <div class="img-description img-description-close">此為baremetrics公司衡量產品功能時所使用的評估方法</div>
+          <h3>繪製草稿線圖：</h3>
+          <img class="post-img" src="/resources/img/post/yahoo menu/wireframe.jpg" alt="" />
+          <h3>製作MVP：</h3>
+          <img class="post-img" src="/resources/img/post/yahoo menu/MVP.jpg" alt="" />
+
+          <div class="blank-line"></div>
+
+          <ol class="post-list">
+            <li>使用filterizr的jQuery插件製作filter功能</li>
+            <li>因為一天有6種菜色，css設定上將一般螢幕設定為一行6個項目，手機設定一行3個項目</li>
+            <li>沙拉及輕食每天只有一種選擇，因此自成一個篩選選項</li>
+          </ol>
+          <h3>測試及反饋：</h3>
+          <ol class="post-list">
+            <li>一開始進入頁面時，如果`All`按鈕在點擊前就有被點擊的樣式，能更好的提示user該做什麼action</li>
+            <li>部分的人是起身去拿便當的路上，才開始用手機查詢菜單，文字的響應式大小需要被優化</li>
+          </ol>
+          <h3>更新需求池：</h3>
+          <img class="post-img" src="/resources/img/post/yahoo menu/feature2.jpg" alt="" />
+          <h3>更新產品：</h3>
+          <img class="post-img" src="/resources/img/post/yahoo menu/yahoo menu.jpg" alt="" />
+
+          <div class="blank-line"></div>
+          <div class="blank-line"></div>
+        </div>
+      </section>
+    </div>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.js"></script>
+    <script src="/resources/js/main.js"></script>
+    <script src="/resources/js/posts.js"></script>
+  </body>
+</html>

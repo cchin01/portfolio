@@ -1,0 +1,119 @@
+@media only screen and (min-width: 768px) {
+  .post-grid {
+    margin: 0 100px 0 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-header .logo a {
+    font-size: 24px;
+  }
+  .page-content {
+    margin-top: -50px;
+    padding: 30px;
+  }
+  .post-card-box li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .post-card-box li:last-child {
+    margin-bottom: 0;
+  }
+  .recent-box .recent-list .recent-item {
+    position: relative;
+    display: inline-block;
+    width: 48.9%;
+    height: 150px;
+    margin-left: 0.5%;
+    margin-bottom: 0.5%;
+  }
+  .recent-box .recent-list .recent-item span {
+    position: absolute;
+    font-size: 12px;
+    left: 2.5%;
+    bottom: 10%;
+    color: #fff;
+  }
+  .about-container {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .blog-tags .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+  }
+  .about-container {
+    width: 100%;
+  }
+  .wrapper {
+    max-width: 95%;
+  }
+  .page-content {
+    margin-top: -50px;
+    padding: 15px;
+  }
+  .header-page {
+    margin-bottom: 20px;
+  }
+  .header-page h1 {
+    font-size: 27px;
+    margin: 0 0 10px;
+  }
+  .header-page .page-date {
+    font-size: 14px;
+  }
+  .main-header .logo a {
+    font-size: 21px;
+  }
+  .menu-icon,
+  .menu-icon-close,
+  .search-icon,
+  .search-icon-close {
+    font-size: 16px;
+  }
+  .page-image {
+    height: 380px;
+  }
+  .recent-box .recent-list .recent-item {
+    position: relative;
+    display: inline-block;
+    width: 99%;
+    height: 150px;
+    margin-left: 0.5%;
+    margin-bottom: 0.5%;
+  }
+  .recent-box .recent-list .recent-item span {
+    position: absolute;
+    font-size: 12px;
+    left: 2.5%;
+    bottom: 10%;
+    color: #fff;
+  }
+  .author-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .author-box .author-left,
+  .author-box .author-right h2 {
+    margin: 0 0 10px;
+  }
+  .author-box .author-img {
+    height: 100px;
+    min-width: 100px;
+  }
+  .author-box .author-right p {
+    margin: 0 0 15px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .btn {
+    margin-bottom: 15px;
+  }
+}
