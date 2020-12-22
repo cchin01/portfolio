@@ -80,6 +80,21 @@ pre code {
   clear: both;
 }
 
+#toTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  color: #000;
+  z-index: 99;
+  width: 150px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  transform: scale(0.8);
+}
+
 /*--------------HEADER--------------*/
 
 .main-header {
@@ -150,12 +165,14 @@ pre code {
 .right-header-container a {
   text-decoration: none;
   color: #311e3e;
-  transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
-  box-shadow: 0 0 0 0 transparent;
+  transition: all 200ms ease-out;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 8px;
 }
 .left-header-container a:hover,
 .right-header-container a:hover {
-  box-shadow: 0 2px 0 0 #311e3e;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #311e3e;
 }
 .left-header-container {
   text-align: left;
@@ -250,11 +267,16 @@ pre code {
 
 .contact-links li a {
   display: block;
-  color: #8d8699;
+  color: #6c41cf;
   font-size: 21px;
   text-decoration: none;
   padding: 5px;
   transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
+}
+
+.logo a {
+  color: #311e3e;
+  text-align: center;
 }
 
 /*--------------Filter--------------*/

@@ -11,7 +11,6 @@ document.addEventListener(
 );
 
 let activeEL;
-console.log(activeEL);
 
 document.querySelectorAll(".btn").forEach((e) => {
   e.addEventListener("click", onButtonClick);
@@ -19,17 +18,31 @@ document.querySelectorAll(".btn").forEach((e) => {
 
 function onButtonClick(e) {
   if (activeEL) {
-    console.log(activeEL);
     if (activeEL != e.currentTarget) {
       activeEL.classList.remove("active");
     }
-    console.log(activeEL);
   }
-
   activeEL = e.currentTarget;
   activeEL.classList.add("active");
 }
 
-//pre-click ALL button to let user know where they are and what they might could do
-const buttonAll = document.querySelectorAll(".btn");
-buttonAll[0].click();
+const toTopbutton = document.getElementById("toTopBtn");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    toTopbutton.style.display = "block";
+  } else {
+    toTopbutton.style.display = "none";
+  }
+}
+
+function toTopFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+console.log("test");

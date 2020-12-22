@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel=icon href=resources/img/home/logo.png sizes="16x16" type="image/png">
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="vendor/css/bootstrap.css" />
     <link rel="stylesheet" href="resources/css/normalize.css" />
     <link rel="stylesheet" href="resources/css/main.css" />
@@ -11,6 +17,9 @@
   </head>
 
   <body>
+    <button onclick="toTopFunction()" id="toTopBtn" title="Go to top" style="display: block">
+      <img src="resources/img/arrow-up.png" alt="Go to top" />
+    </button>
     <div class="flex-container">
       <header class="main-header">
         <div class="wrapper">
@@ -20,32 +29,12 @@
             </div>
             <div class="center-header-container">
               <div class="logo">
-                <div class="author-name">Sameul Chin</div>
-                <div class="author-title">Marketing x Product</div>
+                <a href="/"><div class="author-name">Sameul Chin</div></a>
+                <a href="/"><div class="author-title">Marketing x Product</div></a>
               </div>
-              <ul class="contact-links">
-                <li class="email" data-balloon="Email" data-balloon-pos="left">
-                  <a href="mailto:louis@rassaby.com"><i class="far fa-envelope"></i></a>
-                </li>
-
-                <li class="linkedin" data-balloon="LinkedIn" data-balloon-pos="left">
-                  <a href="https://in.linkedin.com/in/lrassaby" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </li>
-
-                <li class="github" data-balloon="GitHub" data-balloon-pos="right">
-                  <a href="https://github.com/lrassaby" target="_blank"><i class="fab fa-github"></i></a>
-                </li>
-
-                <li class="resume" data-balloon="Resume" data-balloon-pos="right">
-                  <a
-                    href="https://docs.google.com/document/d/1dJIboSF-ktdaP28DDu-gcuOW1SCCnkSdqtodJGwYkaA/export?format=pdf"
-                    ><i class="far fa-file-alt"></i
-                  ></a>
-                </li>
-              </ul>
             </div>
             <div class="right-header-container">
-              <a href="/about"> About </a>
+              <a target="_blank" href="resources/img/中文履歷-秦嘉冠_Samuel Chin.pdf"> Resume </a>
             </div>
           </div>
         </div>
@@ -60,7 +49,6 @@
               <div class="col-xs-12 col-md-8 col-lg-8 text-center filter-buttons">
                 <button class="btn" data-filter="*">All</button>
                 <button class="btn" data-filter=".project">Project</button>
-                <button class="btn" data-filter=".side-project">Side Project</button>
                 <button class="btn" data-filter=".blog">Blog</button>
                 <button class="btn" data-filter=".coding">Coding</button>
               </div>
@@ -71,7 +59,7 @@
               <div class="grid-sizer col-xs-12 col-sm-6 col-md-6 col-lg-4"></div>
 
               <div
-                class="grid-item col-xs-12 col-sm-6 col-md-6 col-lg-4 side-project"
+                class="grid-item col-xs-12 col-sm-6 col-md-6 col-lg-4 project"
                 style="position: absolute; left: 0%; top: 0px"
               >
                 <div class="card">
@@ -82,8 +70,8 @@
                   </a>
                   <div class="card-body">
                     <a href="post/yahoo-menu.html">
-                      <h3>Side Project</h3>
-                      <h4>Yahoo Menu - 從0到1</h4>
+                      <h3>Project</h3>
+                      <h4>Yahoo Menu - 從0到1建立產品(side project)</h4>
                       <p>從蒐集需求到整理需求，從繪製wireframe到製作MVP，從測試及反饋到更新產品版本。</p>
                     </a>
                   </div>
@@ -95,13 +83,13 @@
                 style="position: absolute; left: 33.3329%; top: 0px"
               >
                 <div class="card">
-                  <a href="post/yahoo-menu.html">
+                  <a target="_blank" href="https://medium.com/samuelism/92ceee34c3a7">
                     <div class="card-img-top">
                       <img src="https://miro.medium.com/max/1400/0*xDvP1A-6ZS6B5F3R" />
                     </div>
                   </a>
                   <div class="card-body">
-                    <a href="post/yahoo-menu.html">
+                    <a target="_blank" href="https://medium.com/samuelism/92ceee34c3a7">
                       <h3>Project</h3>
                       <h4>可用性測試案例 - Yahoo購物中心分類</h4>
                       <p>
@@ -117,17 +105,17 @@
                 style="position: absolute; left: 66.6659%; top: 0px"
               >
                 <div class="card">
-                  <a href="">
+                  <a href="post/搜尋引擎的原理.html">
                     <div class="card-img-top">
-                      <img src="resources/img/home/dilemma.jpg" />
+                      <img src="resources/img/home/search.jpg" />
                     </div>
                   </a>
                   <div class="card-body">
-                    <a href="">
+                    <a href="post/搜尋引擎的原理.html">
                       <h3>Blog</h3>
-                      <h4>大型電商面臨的困境</h4>
+                      <h4>搜尋引擎的原理</h4>
                       <p>
-                        很早以前，想書店試讀一本書，你需要先詢問店員；接著，誠品出現了，我們可以舒服的坐在椅子上，抑或是角落，邊閱讀邊享受午後時光；而現今，我們查詢網上的評價跟心得後，直接從網路訂購；未來，我們還能提供什麼不一樣的體驗？
+                        現在大部分的搜尋引擎，都與google搜尋的邏輯類似，但卻沒有一個可以做到跟google一樣「善解人意」。
                       </p>
                     </a>
                   </div>
@@ -135,18 +123,18 @@
               </div>
 
               <div
-                class="grid-item col-xs-12 col-sm-6 col-md-6 col-lg-4 side-project"
+                class="grid-item col-xs-12 col-sm-6 col-md-6 col-lg-4 project"
                 style="position: absolute; left: 0%; top: 444.438px"
               >
                 <div class="card">
-                  <a target="_blank" href="">
+                  <a href="post/用Google Sheet管理樹狀結構資料.html">
                     <div class="card-img-top">
                       <img src="resources/img/home/srtucture data.jpeg" />
                     </div>
                   </a>
                   <div class="card-body">
-                    <a target="_blank" href="">
-                      <h3>Side Project</h3>
+                    <a target="_blank" href="post/用Google Sheet管理樹狀結構資料.html">
+                      <h3>Project</h3>
                       <h4>用Google Sheet管理樹狀結構資料</h4>
                       <p>
                         下班空閒時間進修Excel時，突然研究出好用又好讀的方法，用Google
@@ -162,17 +150,17 @@
                 style="position: absolute; left: 33.3329%; top: 492.7px"
               >
                 <div class="card">
-                  <a target="_blank" href="">
+                  <a target="_blank" href="post/如何製作智慧與美貌並重的簡報.html">
                     <div class="card-img-top">
                       <img src="resources/img/home/chart.jpg" />
                     </div>
                   </a>
                   <div class="card-body">
-                    <a target="_blank" href="">
+                    <a target="_blank" href="post/如何製作智慧與美貌並重的簡報.html">
                       <h3>Blog</h3>
-                      <h4>資料視覺化</h4>
+                      <h4>如何製作智慧與美貌並重的簡報</h4>
                       <p>
-                        一個好的資料呈現，可以打造好的溝通。我在公司開會時，常常看到有人辛苦搜了一堆數據，卻因為沒有優化呈現方式，導致你的觀點無法很好的傳達給受眾，受眾也無法很好的表達他的意見。
+                        喜歡做簡報的簡報狂人，似乎都會經過幾個時期：一開始總喜歡加幾個意義不明的動畫；之後，開始追求對齊以及刪除過多資訊，有時甚至刪過頭到幾乎一絲不掛的程度；最後，輪流迷上高橋流等幾個簡報名人的風格後，才成為現在的自己。
                       </p>
                     </a>
                   </div>
@@ -184,15 +172,15 @@
                 style="position: absolute; left: 66.6659%; top: 589.05px"
               >
                 <div class="card">
-                  <a target="_blank" href="https://cchin01.github.io/JS30/JS01-Drum%20Kit/01.html">
+                  <a target="_blank" href="https://medium.com/samuelism/ef320a267232">
                     <div class="card-img-top">
                       <img src="https://miro.medium.com/max/1400/0*dTURDWcZqFebiP-n" />
                     </div>
                   </a>
                   <div class="card-body">
-                    <a target="_blank" href="https://cchin01.github.io/JS30/JS01-Drum%20Kit/01.html">
+                    <a target="_blank" href="https://medium.com/samuelism/ef320a267232">
                       <h3>Blog</h3>
-                      <h4>產品經理職責與產品開發流程</h4>
+                      <h4>產品經理職責與軟體產品開發流程</h4>
                       <p>
                         身為一個軟體產品經理，一個產品從0到1的過程中需要負責什麼，在產品循環週期中，不同階段要與那些人合作呢？
                       </p>
@@ -274,17 +262,17 @@
                 style="position: absolute; left: 0%; top: 1596.78px"
               >
                 <div class="card">
-                  <a target="_blank" href="https://cchin01.github.io/JS30/JS01-Drum%20Kit/01.html">
+                  <a href="">
                     <div class="card-img-top">
-                      <img src="resources/img/home/search.jpg" />
+                      <img src="resources/img/home/dilemma.jpg" />
                     </div>
                   </a>
                   <div class="card-body">
-                    <a target="_blank" href="https://cchin01.github.io/JS30/JS01-Drum%20Kit/01.html">
+                    <a href="">
                       <h3>Blog</h3>
-                      <h4>搜尋引擎的原理</h4>
+                      <h4>電商平台面臨的困境</h4>
                       <p>
-                        搜尋，對於現代人來講是再正常不過的事情，但裡面其實牽扯到許多問題，包括語意判斷、同義詞、錯別字等。
+                        隨著科技的進步，網站架設的技術門檻越來越低，許多小型店家開設自己的電商平台，甚至只有一個人也能在ig或LINE上賣起東西，網購市場被分成無數的小餅，演變成百家爭鳴的局面。
                       </p>
                     </a>
                   </div>
@@ -292,7 +280,7 @@
               </div>
 
               <div
-                class="grid-item col-xs-12 col-sm-6 col-md-6 col-lg-4 project"
+                class="grid-item col-xs-12 col-sm-6 col-md-6 col-lg-4 blog"
                 style="position: absolute; left: 66.6659%; top: 1610.01px"
               >
                 <div class="card">
@@ -303,10 +291,10 @@
                   </a>
                   <div class="card-body">
                     <a target="_blank" href="https://cchin01.github.io/JS30/JS01-Drum%20Kit/01.html">
-                      <h3>Project</h3>
-                      <h4>專案管理：Yahoo購物分類盤整</h4>
+                      <h3>Blog</h3>
+                      <h4>那些年，我們一起追的Stackholders</h4>
                       <p>
-                        搜尋，對於現代人來講是再正常不過的事情，但裡面其實牽扯到許多問題，包括語意判斷、同義詞、錯別字等。
+                        專案管理是最難被量化成效的工作之一，因此，這篇主要是分享我在做專案管理過程中，領悟到的一些心得及感想。
                       </p>
                     </a>
                   </div>
@@ -337,6 +325,7 @@
         </section>
       </div>
     </div>
+
     <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.js"></script>
     <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.js"></script>

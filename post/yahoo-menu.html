@@ -3,15 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel=icon href=assets/img/favicon.png sizes="16x16" type="image/png">
-    <link rel="stylesheet" href="/vendor/css/bootstrap.css" />
-    <link rel="stylesheet" href="/resources/css/normalize.css" />
-    <link rel="stylesheet" href="/resources/css/main.css" />
-    <link rel="stylesheet" href="/resources/css/mediaQuery.css" />
-    <link rel="stylesheet" href="/resources/css/post.css" />
+    <link rel=icon href=../resources/img/home/logo.png sizes="16x16" type="image/png">
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../vendor/css/bootstrap.css" />
+    <link rel="stylesheet" href="../resources/css/normalize.css" />
+    <link rel="stylesheet" href="../resources/css/main.css" />
+    <link rel="stylesheet" href="../resources/css/mediaQuery.css" />
+    <link rel="stylesheet" href="../resources/css/post.css" />
   </head>
 
   <body>
+    <button onclick="toTopFunction()" id="toTopBtn" title="Go to top">
+      <img src="../resources/img/arrow-up.png" alt="Go to top" />
+    </button>
     <div class="flex-container">
       <header class="main-header">
         <div class="wrapper">
@@ -21,29 +30,9 @@
             </div>
             <div class="center-header-container">
               <div class="logo">
-                <div class="author-name">Sameul Chin</div>
-                <div class="author-title">Marketing x Product</div>
+                <a href="/"><div class="author-name">Sameul Chin</div></a>
+                <a href="/"><div class="author-title">Marketing x Product</div></a>
               </div>
-              <ul class="contact-links">
-                <li class="email" data-balloon="Email" data-balloon-pos="left">
-                  <a href="mailto:louis@rassaby.com"><i class="far fa-envelope"></i></a>
-                </li>
-
-                <li class="linkedin" data-balloon="LinkedIn" data-balloon-pos="left">
-                  <a href="https://in.linkedin.com/in/lrassaby" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </li>
-
-                <li class="github" data-balloon="GitHub" data-balloon-pos="right">
-                  <a href="https://github.com/lrassaby" target="_blank"><i class="fab fa-github"></i></a>
-                </li>
-
-                <li class="resume" data-balloon="Resume" data-balloon-pos="right">
-                  <a
-                    href="https://docs.google.com/document/d/1dJIboSF-ktdaP28DDu-gcuOW1SCCnkSdqtodJGwYkaA/export?format=pdf"
-                    ><i class="far fa-file-alt"></i
-                  ></a>
-                </li>
-              </ul>
             </div>
             <div class="right-header-container">
               <a href="/about"> About </a>
@@ -70,23 +59,23 @@
             合作廠商提供的菜單，習慣將同一個供餐商每天提供的餐點擺在同一頁，讓使用者需要查看多頁來確定今日的菜單。
             但對使用者而言，每個供餐商在同一天分別提供什麼餐點更為重要。
           </p>
-          <div class="blank-line"></div>
-          <img class="post-img" src="/resources/img/post/yahoo menu/bad example.jpg" alt="yahoo menu original" />
+          <div class="blank-line-m"></div>
+          <img class="post-img" src="../resources/img/post/2020/12/bad example.jpg" alt="yahoo menu original" />
           <div class="img-description">原本的菜單樣式</div>
           <h3>如何解決問題：</h3>
           <p>讓使用者能夠以"禮拜幾"作為維度的篩選，方便比較在同一天的不同便當。</p>
 
-          <div class="blank-line"></div>
+          <div class="blank-line-m"></div>
 
           <h3>整理需求：</h3>
-          <img class="post-img" src="/resources/img/post/yahoo menu/feature.jpg" alt="" />
+          <img class="post-img" src="../resources/img/post/2020/12/feature.jpg" alt="" />
           <div class="img-description img-description-close">此為baremetrics公司衡量產品功能時所使用的評估方法</div>
           <h3>繪製草稿線圖：</h3>
-          <img class="post-img" src="/resources/img/post/yahoo menu/wireframe.jpg" alt="" />
+          <img class="post-img" src="../resources/img/post/2020/12/wireframe.jpg" alt="" />
           <h3>製作MVP：</h3>
-          <img class="post-img" src="/resources/img/post/yahoo menu/MVP.jpg" alt="" />
+          <img class="post-img" src="../resources/img/post/2020/12/MVP.jpg" alt="" />
 
-          <div class="blank-line"></div>
+          <div class="blank-line-m"></div>
 
           <ol class="post-list">
             <li>使用filterizr的jQuery插件製作filter功能</li>
@@ -99,19 +88,18 @@
             <li>部分的人是起身去拿便當的路上，才開始用手機查詢菜單，文字的響應式大小需要被優化</li>
           </ol>
           <h3>更新需求池：</h3>
-          <img class="post-img" src="/resources/img/post/yahoo menu/feature2.jpg" alt="" />
+          <img class="post-img" src="../resources/img/post/2020/12/feature2.jpg" alt="" />
           <h3>更新產品：</h3>
-          <img class="post-img" src="/resources/img/post/yahoo menu/yahoo menu.jpg" alt="" />
+          <img class="post-img" src="../resources/img/post/2020/12/yahoo menu.jpg" alt="" />
 
-          <div class="blank-line"></div>
-          <div class="blank-line"></div>
+          <div class="blank-line-xl"></div>
         </div>
       </section>
     </div>
     <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.js"></script>
     <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.js"></script>
-    <script src="/resources/js/main.js"></script>
-    <script src="/resources/js/posts.js"></script>
+    <script src="../resources/js/main.js"></script>
+    <script src="../resources/js/posts.js"></script>
   </body>
 </html>

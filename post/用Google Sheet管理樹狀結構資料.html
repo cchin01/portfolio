@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=icon href=../resources/img/home/logo.png sizes="16x16" type="image/png">
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../vendor/css/bootstrap.css" />
+    <link rel="stylesheet" href="../resources/css/normalize.css" />
+    <link rel="stylesheet" href="../resources/css/main.css" />
+    <link rel="stylesheet" href="../resources/css/mediaQuery.css" />
+    <link rel="stylesheet" href="../resources/css/post.css" />
+  </head>
+
+  <body>
+    <button onclick="toTopFunction()" id="toTopBtn" title="Go to top">
+      <img src="../resources/img/arrow-up.png" alt="Go to top" />
+    </button>
+    <div class="flex-container">
+      <header class="main-header">
+        <div class="wrapper">
+          <div class="header-flex">
+            <div class="left-header-container">
+              <a href="/"> Home </a>
+            </div>
+            <div class="center-header-container">
+              <div class="logo">
+                <a href="/"><div class="author-name">Sameul Chin</div></a>
+                <a href="/"><div class="author-title">Marketing x Product</div></a>
+              </div>
+            </div>
+            <div class="right-header-container">
+              <a href="/about"> About </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <section id="post">
+        <div class="post-container post-card-box">
+          <div class="post-title">
+            <h1>用Google Sheet管理樹狀結構資料</h1>
+            <h2>如何設計一個適合管理tree srtucture的表單</h2>
+          </div>
+
+          <h3>緣起：</h3>
+          <p>
+            在做專案管理時，需要盤整一個樹狀架構，內含約5000個項目。因此，團隊需要一個方便查看、查詢、修改及維護的表單。
+          </p>
+          <h3>思路：</h3>
+          <ol class="post-list">
+            <li>樹狀架構的精隨在於可以一眼看出各層的從屬關係，在設計表單的過程中需要顧慮這一點</li>
+            <li>使用Google Sheet的目的在於想要利用其篩選功能，快速了解各層狀況</li>
+            <li>因架構常常變動，設計上需要易於閱讀及維護</li>
+          </ol>
+
+          <div class="blank-line-m"></div>
+
+          <h3>STEP 1 - 列出樹狀圖：</h3>
+          <img class="post-img" src="/resources/img/post/2020/12/樹狀圖.jpg" alt="" />
+          <div class="img-description img-description-close">原始樹狀圖</div>
+
+          <div class="blank-line-m"></div>
+
+          <h3>STEP 2 - 將樹狀圖填入Excel：</h3>
+
+          <img class="post-img" src="../resources/img/post/2020/12/tree_structure.jpg" alt="" />
+
+          <br /><br /><br /><br />
+
+          <h3>STEP 3 - 選取範圍後新增篩選功能：</h3>
+
+          <img class="post-img" src="../resources/img/post/2020/12/tree_structure_filter.jpg" alt="" />
+
+          <div class="blank-line-m"></div>
+
+          <h3>STEP 4 - 填滿表格缺空：</h3>
+          <p>配合篩選功能，將公式"=INDIRECT(ADDRESS(ROW()-1,COLUMN()))"填入各層下方缺空處，並將填入的字體設為灰色。</p>
+          <img class="post-img" src="../resources/img/post/2020/12/tree_structure_fill_blank.jpg" alt="" />
+
+          <div class="blank-line-s"></div>
+
+          <p>
+            完成後，因為顏色的關係，你不會因為表格被填滿，而無法一眼看出樹狀結構各層的從屬關係，但卻可以因此享受篩選功能的便利。
+          </p>
+          <div class="blank-line-s"></div>
+          <p>
+            舉例來說，當你想要查看所有L2的資訊時，你只需在L3篩選器選取「僅顯示空白」，便可以看到所有L2的狀態。你也可以在L3篩選器，只選取空白以外的所有選項，而後排序資訊欄的從A→Z，便可以只查看L3的資訊列大小關係。
+          </p>
+
+          <div class="blank-line-xl"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.js"></script>
+    <script src="../resources/js/main.js"></script>
+    <script src="../resources/js/posts.js"></script>
+  </body>
+</html>

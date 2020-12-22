@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=icon href=../resources/img/home/logo.png sizes="16x16" type="image/png">
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../vendor/css/bootstrap.css" />
+    <link rel="stylesheet" href="../resources/css/normalize.css" />
+    <link rel="stylesheet" href="../resources/css/main.css" />
+    <link rel="stylesheet" href="../resources/css/mediaQuery.css" />
+    <link rel="stylesheet" href="../resources/css/post.css" />
+  </head>
+
+  <body onload="ResetBtn()">
+    <button onclick="toTopFunction()" id="toTopBtn" title="Go to top">
+      <img src="../resources/img/arrow-up.png" alt="Go to top" />
+    </button>
+    <div class="flex-container">
+      <header class="main-header">
+        <div class="wrapper">
+          <div class="header-flex">
+            <div class="left-header-container">
+              <a href="/"> Home </a>
+            </div>
+            <div class="center-header-container">
+              <div class="logo">
+                <a href="/"><div class="author-name">Sameul Chin</div></a>
+                <a href="/"><div class="author-title">Marketing x Product</div></a>
+              </div>
+            </div>
+            <div class="right-header-container">
+              <a href="/about"> About </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <section id="post">
+        <div class="post-container post-card-box">
+          <div class="post-title">
+            <h1>搜尋引擎的原理</h1>
+            <h2>善解人意的 Google Search</h2>
+          </div>
+          <h3>搜尋運作的流程：</h3>
+          <p>語意判斷 → 擴展查詢 → 關鍵詞比對 → 評估關聯性 → 回傳結果</p>
+          <div class="blank-line-s"></div>
+          <p>
+            各家搜尋引擎的流程略有不同，這裡以最多人使用的方法為主，可參考<a
+              target="_blank"
+              href="https://www.google.com/intl/zh-TW/search/howsearchworks/"
+              >GOOGLE搜索</a
+            >。
+          </p>
+
+          <h3>語意判斷：</h3>
+          <p>這裡主要做兩件事情，忽略字符及斷詞斷句。</p>
+          <div class="blank-line-s"></div>
+          <p>
+            所謂的忽略字符，就是忽略不影響搜尋結果的關鍵字，以中文來講就是「的」、「了」等，以英文來說就是「the」、「a(an)」等。
+          </p>
+          <div class="blank-line-s"></div>
+          <p>
+            至於斷詞斷句則是拿來彌補機器不懂人類語言的缺點，比如我搜尋「牛仔褲」，搜尋引擎在沒有斷詞斷句，也就是不了解語意的情況下，他只會找內容有「牛仔褲」的網頁回傳，而內容有「牛仔緊身褲」或「牛仔長褲」則視為不符合搜尋結果，而不會回傳。
+          </p>
+          <div class="blank-line-s"></div>
+          <p>
+            在這個例子，斷詞斷詞可以幫我們把「牛仔褲」斷開成搜尋「牛仔」及「褲」，則上面提到的三個網頁都會回傳，也就是了解關鍵字的語意。
+          </p>
+          <div class="blank-line-s"></div>
+          <p>當然，我們也可以搜尋「牛仔 褲」，這就相當於主動做斷詞斷句。</p>
+
+          <h3>擴展查詢：</h3>
+          <p>這項技術主要針對兩件事情，同義詞及錯別字</p>
+          <div class="blank-line-s"></div>
+          <p>
+            當你想查詢「雨鞋」，卻誤輸入「雨協」的時候，因為之前搜尋「雨協」的人，大部分都會再重新搜尋「雨鞋」，因此這些詞彙有些以人工，有些以機器學習的方式納入資料庫。
+          </p>
+          <div class="blank-line-s"></div>
+          <p>
+            之後，再區分這是同義詞還是錯別字。若是同義詞，例如「臉書」「FACEBOOK」，則會兩種都搜尋並回傳；若是錯別字，例如「雨協」及「雨鞋」，則會兩種都搜尋，但只回傳一個結果，並詢問你是想要哪種結果。
+          </p>
+          <div class="blank-line-s"></div>
+          <img
+            class="post-img"
+            src="../resources/img/post/2020/12/google misspellings 1.jpg"
+            alt="yahoo menu original"
+          />
+          <div class="img-description img-description-close">
+            原本Google錯別字的處理，是需要主動點擊錯別字更正，才會回傳最佳結果
+          </div>
+          <div class="blank-line-s"></div>
+          <img
+            class="post-img"
+            src="../resources/img/post/2020/12/google misspellings 2.jpg"
+            alt="yahoo menu original"
+          />
+          <div class="img-description img-description-close">
+            現在是先回傳最佳的結果，並詢問是否搜尋原本錯誤的關鍵字
+          </div>
+
+          <h3>關鍵字比對：</h3>
+          <p>
+            前面的步驟項就是食材處理，直到這裡才開始進入關鍵字比對環節。如同我們前面所提到的，關鍵字的比對是採用完全比對，不存在任何模糊空間，那些為了接近人類語言，而被允許的模糊空間，都是前面那些步驟處理的結果。
+          </p>
+          <div class="blank-line-s"></div>
+          <p>
+            假設我搜尋「購物袋」，若是經過前面那些步驟的處理後，沒有在斷詞斷句資料庫發現可參考資料，也沒有可用的錯別字或同義詞，那麼，會被回傳的網頁就只有確切含有「購物袋」三個一模一樣的字，且三個字黏在一起的關鍵字。
+          </p>
+          <div class="blank-line-s"></div>
+          <p>而那些只提及「購物的袋子」、「買東西用的袋子」、「購物用袋子」的網頁，都將不會顯示在搜尋結果裡。</p>
+
+          <div class="blank-line-m"></div>
+
+          <h3>評估關聯性：</h3>
+          <p>為了避免出現垃圾網頁或著不符結果的搜尋，有出現關鍵字的網頁還會被做一系列的身家調查：</p>
+          <ol class="post-list">
+            <li>你的網頁出現了幾次關鍵字？</li>
+            <li>網址或網頁標題是否含有關鍵字？</li>
+            <li>關鍵字是否相鄰或過於頻繁地出現？</li>
+            <li>網頁是否有關鍵字的關聯詞？</li>
+            <li>網頁所屬的網站是否可靠？</li>
+            <li>Page Rank？</li>
+          </ol>
+
+          <div class="blank-line-m"></div>
+
+          <h3>回傳結果：</h3>
+          <p>根據評估關聯性的一系列問題，彙整所有因素，算出頁面的整體分數後，依分數排序網頁並顯示在SERP。</p>
+
+          <div class="blank-line-xl"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.js"></script>
+    <script src="../resources/js/main.js"></script>
+    <script src="../resources/js/posts.js"></script>
+  </body>
+</html>

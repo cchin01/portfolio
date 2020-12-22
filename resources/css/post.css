@@ -11,8 +11,24 @@
   margin: 0 auto;
 }
 
-.blank-line {
+.blank-line-s {
+  margin: 40px 0 40px 0;
+}
+
+.blank-line-m {
   margin: 80px 0 80px 0;
+}
+
+.blank-line-l {
+  margin: 160px 0 160px 0;
+}
+
+.blank-line-xl {
+  margin: 320px 0 320px 0;
+}
+
+.paragraph-line {
+  margin: 40px 0 40px 0;
 }
 
 .img-description {
@@ -35,8 +51,8 @@ p,
 }
 
 h1 {
-  font-size: 400%;
-  font-weight: 400;
+  font-size: 330%;
+  font-weight: 500;
   margin: 0 0 20px 0;
 }
 
@@ -45,6 +61,8 @@ h2 {
   font-weight: 300;
   color: rgb(141, 141, 141);
   margin-bottom: 60px;
+  letter-spacing: 0.01em;
+  word-spacing: 0.05em;
 }
 
 h3 {
@@ -56,8 +74,22 @@ h3 {
 p {
   font-size: 21px;
   font-weight: 300;
-  letter-spacing: 0.07em;
+  letter-spacing: 0em;
   text-align: justify;
+  color: rgba(41, 41, 41, 1);
+  line-height: 32px;
+}
+
+a {
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: 0em;
+  text-align: justify;
+  line-height: 32px;
+}
+
+li {
+  margin-top: 10px;
 }
 
 .post-list {
