@@ -8,11 +8,22 @@
 }
 
 .resume a {
-  width: 100%;
   text-align: center;
 }
 
 .chinese-resume {
-  display: inline-block;
-  margin: 40px 0 30px 0;
+  margin: 120px 0 100px 0;
+  transition: all 600ms ease;
+}
+
+.english-resume {
+  transition: all 600ms ease;
+}
+
+.chinese-resume:hover {
+  transform: scale(1.1);
+}
+
+.english-resume:hover {
+  transform: scale(1.1);
 }
