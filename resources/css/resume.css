@@ -1,0 +1,18 @@
+.resume h1 {
+  font-weight: 300;
+}
+
+.resume h2 {
+  font-weight: 200;
+  line-height: 10px;
+}
+
+.resume a {
+  width: 100%;
+  text-align: center;
+}
+
+.chinese-resume {
+  display: inline-block;
+  margin: 40px 0 30px 0;
+}
